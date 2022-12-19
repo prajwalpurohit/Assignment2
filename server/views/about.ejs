@@ -1,0 +1,53 @@
+<!--File Name:about.ejs
+    Name: Prajwal
+    Student ID 301243308
+    Date 20 November 2022-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include partials/header.ejs %>
+</head>
+<body>
+    <header>
+        <% include partials/main_nav.ejs %>
+    </header>
+
+<!--Main content-->
+<main class="container">
+
+  <h1 class="display-4">Welcome to the <%= title%> page!</h1>
+  
+</div>
+</main>
+<div class="hero">
+
+  <video autoplay loop muted plays-inline class="back-video">
+<source src="/images/video.mp4" type="video/mp4">
+>  </video>
+
+</div> 
+<br>
+<center><strong><h2>About Me</h2></strong></center>
+<img src="/images/Prajwal.jpg" class="profile" alt="picture" width="40%" height="30%"><br><br>
+
+ <strong> <p style="position: absolute; left: 600px">Name: Prajwal Purohit</p><br><br> </strong>
+ <strong><p style="position: absolute; left: 600px">
+Hey There! I'm a third semester student at the Centennial college studying<br>
+Software Engineering Technology. I am from Delhi, the national capital of India but currently reside <br>
+in Scarborough, Canada. I am a filmmaking enthusiast. I like to meet new people and travel new places. <br>I 
+have a keen curiosity about things and love to learn about new cultures, regions and experienes. <strong>
+<br><br>
+    <br>
+    <span class="resumeLink"><a href="/Assets/PrajwalResume.pdf"><i class="fa-solid fa-download"></i>Resume</a></span>
+</div><br>
+
+<footer>
+    <% include partials/bottom_nav.ejs %>
+</footer>
+
+<script src = "/jquery/dist/jquery.min.js"></script>
+    <script src = "/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src = "/Script/app.js"></script> 
+
+</body>
+</html>

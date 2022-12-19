@@ -1,0 +1,60 @@
+<!--File Name:home.ejs
+    Name: Prajwal
+    Student ID 301243308
+    Date 20 November 2022-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include partials/header.ejs %>
+</head>
+<body>
+    <header>
+        <% include partials/main_nav.ejs %>
+    </header>
+
+
+
+<!--Main content-->
+<main class="container">
+
+
+
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to the <%= title%> page!</h1>
+  
+</div>
+</main>
+ <div class="hero">
+
+  <video autoplay loop muted plays-inline class="back-video">
+<source src="/images/video.mp4" type="video/mp4">
+>  </video>
+
+</div> 
+    <center><button id = "b1Home" type="button"> About Me </button></center>
+    <script type = "text/javascript">
+        document.getElementById("b1Home").onclick= function(){
+            location.href = "http://localhost:3000/about";
+        };
+        </script>
+        <!--Mission statement and button-->
+   <div id="p1">
+  <center> <h2>Hello! I am Prajwal Purohit and this is my portfoio project</h3></center>
+   <center><h5>Click the about button on top to read something about me.</h5></center>
+   </div> 
+
+  
+
+  
+
+
+<footer>
+    <% include partials/bottom_nav.ejs %>
+</footer>
+
+<script src = "/jquery/dist/jquery.min.js"></script>
+    <script src = "/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src = "/Script/app.js"></script> 
+
+</body>
+</html>
